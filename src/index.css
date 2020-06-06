@@ -1,13 +1,70 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.game-options {
+  width: 500px;
+}
+
+.square {
+  background: rgb(238, 237, 237);
+  border: 1px solid #999;
+  float: left;
+  font-size: 15px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  transform-style: preserve-3d;
+  transition: all 0.2s linear;
+}
+
+.square.dark {
+  background: rgb(218, 218, 218);
+}
+
+.square.flag {
+  background: rgb(197, 103, 65);
+  color: white;
+}
+
+.square.bomb {
+  background: rgb(175, 34, 34);
+  color: white;
+}
+
+.square.opened {
+  background: white;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.flipped {
+  /* -webkit-transform: rotateY(180deg); */
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
 }
