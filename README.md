@@ -1,7 +1,6 @@
 # Mine Sweeper
 
 Simple Mine Sweeper app created using React.js and carrots.<br />
-It's not smart for now, but that's the primary plan.
 
 ## UI
 ![alt text](./ims/start.png "Start")
